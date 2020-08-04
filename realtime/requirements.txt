@@ -1,0 +1,6 @@
+django
+django-channels
+django-bootstrap4
+channels-redis
+
+

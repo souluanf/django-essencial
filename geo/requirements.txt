@@ -1,0 +1,3 @@
+django
+geoip2
+requests

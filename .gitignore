@@ -1,0 +1,16 @@
+__pychache__
+
+*.*~
+
+*.pyc
+
+.env
+
+db.sqlite3
+
+.idea/
+
+htmlcov/*
+
+*/settings_local.py
+

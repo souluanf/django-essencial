@@ -1,0 +1,15 @@
+language: python
+python:
+- 3.7.7
+install:
+- pip install -r requirements.txt
+script:
+- coverage run manage.py test
+deploy:
+  provider: heroku
+  api_key:
+    secure: tM7e7PTcZxlLcJAAn4pPgKFQk1SKhWEm9Hz3k6POgnm2UJQiqDDP0gER/IC6XAntXcG2eH5lz/kj+bymI6FoAG0lG1pq+8g8bk6/beYKUdU7yvq7aaScrFiTMxBYFP9z/uyqXWx9IoF/679ESSlGgN89C+CVFtgD5wyuYoC0A7qepLNAcV3r26zG/+8GKRl+edJWRT8//altxAVrPH1oeN5uAaHxzVkYvUBjeD2RojOdE70FkmoHsJIkvdiq1ixeSpgksiPrkrEwaIioop+HLSscgd7DWG0bnIH3U/DW3drfs/rrQ+ZVvYY3UFlKKZ96F4jk22h3jnO0PYKRgHDpRkcEMB5oZiu9A8XlkIOlcG3azxZbVcrZ+DKWYwfoIFH8ehsOXqPgigmNJH8Z/SmmZnko5I7F3vcO0d36FlQHNVBGaEBoC763ADHwKT4km6x/VqoTZtu+i+6+nY/nwiEzSSQZTe+mfkDkwS65R8TObdu+8VFAblPt/cV2xI6b7TYzqsH3y3Y5Cm1nkiHSj9egJItUyLELdgXQdoQOdfcuzRZCnW5tccsN3J8lYiAJEFfK2bUIkH8XhLonB2zadFU2vV1Dt5twsYZ8uDt7lvc7xsl6djhrf43KsgrXA5dUHcoyejPhsJgWj1P/MTzumGSf7JzkgAedbX5KOdpu1NSbtAg=
+  app: fusion-lfs
+  on:
+    repo: souluanf/fusion-lfs
+  skip_cleanup: true
